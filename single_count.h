@@ -7,6 +7,12 @@
 struct single_letter_count{
     char letter;
     int count;
+    float percent;
+};
+
+struct single_freq{
+    char letter;
+    float percent;
 };
 
 //function to count frequency of each letter

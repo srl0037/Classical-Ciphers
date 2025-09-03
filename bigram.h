@@ -9,6 +9,13 @@ struct double_letter_count{
     char first_letter;
     char second_letter;
     int count;
+    float percent;
+};
+
+struct double_freq{
+    char first_letter;
+    char second_letter;
+    float percent;
 };
 
 //function to count frequency of each pair of letters

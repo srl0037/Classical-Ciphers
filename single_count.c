@@ -39,9 +39,18 @@ void desc_print (const char *outfilename, const int *single_count){
 
     // Create an array of structs to sort letters by count
     struct single_letter_count letters[ALPHABET_SIZE];
+    int total_letters = 0;
+
+    //count all letters
+    for (int i = 0; i < ALPHABET_SIZE; i++) {
+        total_letters += single_count[i];
+    }
+
+
     for (int i = 0; i < ALPHABET_SIZE; i++) {
         letters[i].letter = 'a' + i;
         letters[i].count = single_count[i];
+        letters[i].percent = (100.0 * single_count[i]) / total_letters;
     }
 
     // Sort using simple bubble sort
@@ -55,11 +64,28 @@ void desc_print (const char *outfilename, const int *single_count){
         }
     }
 
+    // struct of the english frequncy to print later
+    struct single_freq english_freq [] = {
+        {'e', 12.70}, {'t', 9.06}, {'a', 8.17}, {'o', 7.51},
+        {'i', 6.97}, {'n', 6.75}, {'s', 6.33}, {'h', 6.09},
+        {'r', 5.99}, {'d', 4.25}, {'l', 4.03}, {'c', 2.78},
+        {'u', 2.76}, {'m', 2.41}, {'w', 2.36}, {'f', 2.23},
+        {'g', 2.02}, {'y', 1.97}, {'p', 1.93}, {'b', 1.49},
+        {'v', 0.98}, {'k', 0.77}, {'j', 0.15}, {'x', 0.15},
+        {'q', 0.10}, {'z', 0.07}
+    };
+
+
     // Print result
+    // Print sorted bigrams
     fprintf(outfile, "\nSingle Letter frequencies (descending):\n");
+    fprintf(outfile, "%-10s %-10s %-10s\n", "Cipher", "Cipher %", "Most Common in Enlgish");
+
     for (int i = 0; i < ALPHABET_SIZE; i++) {
         if (letters[i].count > 0)
-            fprintf(outfile, "%c: %d\n", letters[i].letter, letters[i].count);
+            fprintf(outfile, "%d. %c: %d (%.2f%%) →  %d. %c (%.2f%%)\n", (i+1), letters[i].letter, letters[i].count, 
+                letters[i].percent, (i+1), english_freq[i].letter, 
+                english_freq[i].percent);
     }
     fclose(outfile);
 }

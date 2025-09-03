@@ -10,6 +10,14 @@ struct triple_letter_count{
     char second_letter;
     char third_letter;
     int count;
+    float percent;
+};
+
+struct triple_freq{
+    char first_letter;
+    char second_letter;
+    char third_letter;
+    float percent;
 };
 
 //function to count frequency of each pair of letters
