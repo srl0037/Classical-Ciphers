@@ -88,7 +88,7 @@ void digram_desc_print (const char *outfilename, const int bigram_counts[ALPHABE
         }
     }
 
-
+    // struct of the english frequncy to print later
     struct double_freq english_freq [] = {
         {'t','h',1.52}, {'h','e',1.28}, {'i','n',0.94}, {'e','r',0.94},
         {'a','n',0.82}, {'r','e',0.68}, {'o','n',0.57}, {'a','t',0.56},
