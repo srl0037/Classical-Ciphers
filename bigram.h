@@ -22,6 +22,9 @@ struct double_freq{
 void digram_count_funct(const char *filename, int bigram_counts[ALPHABET_SIZE][ALPHABET_SIZE]);
 
 //function to print letters out in descending order
-void digram_desc_print (const char *outfilename, const int bigram_counts[ALPHABET_SIZE][ALPHABET_SIZE]);
+void digram_desc_print (const char *infilename, const char *outfilename, const int bigram_counts[ALPHABET_SIZE][ALPHABET_SIZE]);
+
+void digram_decrypt(const char *infilename, const char *outfilename, struct double_letter_count letters[], struct double_freq english_freq[]);
+
 
 #endif

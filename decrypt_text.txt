@@ -1,0 +1,137 @@
+
+Single Letter frequencies (descending):
+Cipher     Cipher %   Most Common in Enlgish
+1. x: 161 (12.03%) →  1. e (12.70%)
+2. t: 126 (9.42%) →  2. t (9.06%)
+3. j: 123 (9.19%) →  3. a (8.17%)
+4. m: 114 (8.52%) →  4. o (7.51%)
+5. p: 107 (8.00%) →  5. i (6.97%)
+6. c: 96 (7.17%) →  6. n (6.75%)
+7. r: 87 (6.50%) →  7. s (6.33%)
+8. b: 83 (6.20%) →  8. h (6.09%)
+9. n: 68 (5.08%) →  9. r (5.99%)
+10. v: 64 (4.78%) →  10. d (4.25%)
+11. g: 49 (3.66%) →  11. l (4.03%)
+12. w: 38 (2.84%) →  12. c (2.78%)
+13. y: 30 (2.24%) →  13. u (2.76%)
+14. a: 29 (2.17%) →  14. m (2.41%)
+15. l: 27 (2.02%) →  15. w (2.36%)
+16. i: 26 (1.94%) →  16. f (2.23%)
+17. u: 25 (1.87%) →  17. g (2.02%)
+18. h: 23 (1.72%) →  18. y (1.97%)
+19. f: 18 (1.35%) →  19. p (1.93%)
+20. e: 15 (1.12%) →  20. b (1.49%)
+21. q: 12 (0.90%) →  21. v (0.98%)
+22. o: 6 (0.45%) →  22. k (0.77%)
+23. d: 6 (0.45%) →  23. j (0.15%)
+24. k: 3 (0.22%) →  24. x (0.15%)
+25. s: 1 (0.07%) →  25. q (0.10%)
+26. z: 1 (0.07%) →  26. z (0.07%)
+
+
+Decrypted Text (via frequency mapping):
+
+ht aie sowe ingd mowe fndai fhtceds nf o wot's iotr, otr udnae njed ocohtsa aie motrlesahmy gvnt
+aie vlosaed nf aie uoll nf aie yhtc's volome; otr aie yhtc sou aie voda nf aie iotr aioa udnae.
+aiet aie yhtc's mngtaetotme uos miotcer, otr ihs aingcias adngpler ihw, sn aioa aie qnhtas nf ihs
+lnhts uede lnnser, otr ihs ytees swnae nte ocohtsa otnaied. aie yhtc mdher olngr an pdhtc ht aie
+osadnlnceds, aie miolreots, otr aie snnaisobeds. otr aie yhtc svoye, otr sohr an aie uhse wet
+nf popblnt, uinsnejed sioll deor aihs udhahtc, otr sinu we aie htaedvdeaoahnt aiedenf, sioll pe
+mlnaier uhai smodlea, otr ioje o mioht nf cnlr opnga ihs temy, otr sioll pe aie aihdr dgled
+ht aie yhtcrnw. aiet mowe ht oll aie yhtc's uhse wet; pga aieb mnglr tna deor aie udhahtc, tnd woye
+ytnut an aie yhtc aie htaedvdeaoahnt aiedenf. aiet uos yhtc pelsiokkod cdeoalb adngpler, otr
+ihs mngtaetotme uos miotcer ht ihw, otr ihs lndrs uede osanthsier. tnu aie xgeet, pb deosnt nf
+aie undrs nf aie yhtc otr ihs lndrs, mowe htan aie potxgea ingse; otr aie xgeet svoye otr sohr, n
+yhtc, lhje fndejed; lea tna aib aingcias adngple aiee, tnd lea aib mngtaetotme pe miotcer; aiede hs
+o wot ht aib yhtcrnw, ht uinw hs aie svhdha nf aie inlb cnrs; otr ht aie robs nf aib uhsrnw nf aie
+cnrs, uos fngtr ht ihw; uinw aie yhtc tepgmiortekkod aib foaied, aie yhtc, h sob, aib foaied,
+wore wosaed nf aie wochmhots, osadnlnceds, miolreots, otr snnaisobeds; fndoswgmi os ot
+ezmelleta svhdha, otr ytnulerce, otr gtredsaotrhtc, htaedvdeahtc nf rdeows, otr sinuhtc nf
+iodr setaetmes, otr rhssnljhtc nf rngpas, uede fngtr ht aie sowe rothel, uinw aie yhtc tower
+pelaesiokkod; tnu lea rothel pe moller, otr ie uhll sinu aie htaedvdeaoahnt.
+Bigram frequencies (descending):
+Cipher     Cipher %   Most Common in Enlgish
+1. jp: 66 (6.40%) →  1. th (1.52%)
+2. px: 52 (5.04%) →  2. he (1.28%)
+3. bt: 43 (4.17%) →  3. in (0.94%)
+4. mt: 42 (4.07%) →  4. er (0.94%)
+5. tn: 29 (2.81%) →  5. an (0.82%)
+6. tw: 26 (2.52%) →  6. re (0.68%)
+7. xv: 25 (2.42%) →  7. on (0.57%)
+8. ci: 18 (1.74%) →  8. at (0.56%)
+9. pm: 18 (1.74%) →  9. en (0.55%)
+10. cu: 16 (1.55%) →  10. nd (0.53%)
+11. vx: 16 (1.55%) →  11. to (0.52%)
+12. br: 15 (1.45%) →  12. of (0.50%)
+13. hb: 15 (1.45%) →  13. ha (0.49%)
+14. jx: 14 (1.36%) →  14. ti (0.47%)
+15. xt: 13 (1.26%) →  15. st (0.46%)
+16. gx: 12 (1.16%) →  16. es (0.46%)
+17. mr: 12 (1.16%) →  17. en (0.45%)
+18. pb: 12 (1.16%) →  18. ng (0.43%)
+19. pc: 12 (1.16%) →  19. ou (0.43%)
+20. xn: 12 (1.16%) →  20. le (0.42%)
+21. tj: 11 (1.07%) →  21. or (0.42%)
+22. mg: 10 (0.97%) →  22. al (0.40%)
+23. cj: 9 (0.87%) →  23. it (0.39%)
+24. gc: 9 (0.87%) →  24. as (0.38%)
+25. lx: 9 (0.87%) →  25. is (0.38%)
+26. rj: 9 (0.87%) →  26. ho (0.38%)
+27. rp: 9 (0.87%) →  27. un (0.37%)
+28. tc: 9 (0.87%) →  28. io (0.37%)
+29. xj: 9 (0.87%) →  29. ed (0.37%)
+30. ap: 8 (0.78%) →  30. co (0.36%)
+
+
+Decrypted Text (via BIGRAM frequency mapping):
+
+in th rmis ouuv amis icvj ibreon at  lm' enan, er yvit cdon mwmbtr th amaneshoba uqct
+th qgenti at th ymgg at th hare' qmgmax; er th hare rm th qmvj at th enan thmj yvit.
+thst th hare' acuttitmta ym coerwx, er ng thndwpjr jvndfgle ng, rc thmj th scinjr at ng
+asin yxto ascrle, er ng htxx rlit ct mwmbtr erithe. th hare avbx alnd jc fvin in th
+enjvcgcwon, th coalnxer, er th rcitprmeon. er th hare rqmh, er rmbn jc th ybrx is
+at fmfeas, ypcrcxdx unal tomn thof yvbjin, er uncy is th intivqtojmjbct thonxc, unal fx
+agithe ybth ramves, er endx  comb at wcgn mfnd ng txah, er unal fx th thbv vues
+in th harenc. thst amis in al th hare' ybrx is; fu thxe acug io tomn th yvbjin, io lmhx
+htcy jc th hare th intivqtojmjbct thonxc. thst ym hare fxgrenoomv wvxmjg jvndfgle, er
+ng acuttitmta ym coerwx in ng, er ng asvn yxto enjctbunle. io th kuxx, fe toenct at
+th ycvn at th hare er ng asvn, amis injc th fmtkux ouur; er th kuxx rqmh er rmbn, 
+hare, gbdx ictodx; es io th thndwpjr jvndfg thxx, io es th acuttitmta fx coerwx; thon of
+ lm in th harenc, in ypcl of th rqbvbj at th ouge wcnr; er in th nmer at th ybrncl at th
+wcnr, ym icut in ng; ypcl th hare txfucomntxoomv th imthon, th hare,  rm, th imthon,
+lmnx lmhoon at th lmwbaber, enjvcgcwon, coalnxer, er rcitprmeon; icvmrlua en er
+xzaxggst rqbvbj, er htcyesnw, er utnxvrjmanin, intivqtojbre at nvxmlr, er uncyin at
+envn rxorstax, er nbrrcgdbre at ncufjr, yxto icut in th rmis nmtbxg, ypcl th hare tmis
+fxgjxrenoomv; io es nmtbxg fx amggle, er he ybgg uncy th intivqtojmjbct.
+Trigram frequencies (descending):
+Cipher     Cipher %   Most Common in Enlgish
+1. jpp: 50 (6.80%) →  1. the (1.81%)
+2. mtt: 26 (3.54%) →  2. and (0.73%)
+3. btt: 23 (3.13%) →  3. ing (0.72%)
+4. hbb: 15 (2.04%) →  4. her (0.71%)
+5. pbb: 8 (1.09%) →  5. ent (0.42%)
+6. tjj: 8 (1.09%) →  6. tio (0.42%)
+7. app: 7 (0.95%) →  7. ere (0.42%)
+8. btt: 6 (0.82%) →  8. tha (0.33%)
+9. jpp: 6 (0.82%) →  9. nth (0.33%)
+10. jxx: 6 (0.82%) →  10. was (0.28%)
+11. mgg: 6 (0.82%) →  11. eth (0.27%)
+12. mll: 6 (0.82%) →  12. for (0.26%)
+13. pxx: 6 (0.82%) →  13. dth (0.25%)
+14. xvv: 6 (0.82%) →  14. hat (0.24%)
+15. xvv: 6 (0.82%) →  15. thi (0.24%)
+16. cuu: 5 (0.68%) →  16. wit (0.23%)
+17. jvv: 5 (0.68%) →  17. wil (0.22%)
+18. mrr: 5 (0.68%) →  18. ion (0.22%)
+19. pmm: 5 (0.68%) →  19. oft (0.21%)
+20. pmm: 5 (0.68%) →  20. his (0.21%)
+21. rpp: 5 (0.68%) →  21. est (0.20%)
+22. vxx: 5 (0.68%) →  22. one (0.20%)
+23. acc: 4 (0.54%) →  23. res (0.19%)
+24. cjj: 4 (0.54%) →  24. out (0.19%)
+25. cuu: 4 (0.54%) →  25. hav (0.19%)
+26. gxx: 4 (0.54%) →  26. ngt (0.18%)
+27. gxx: 4 (0.54%) →  27. off (0.18%)
+28. jxx: 4 (0.54%) →  28. the (0.18%)
+29. pcc: 4 (0.54%) →  29. ter (0.17%)
+30. qvv: 4 (0.54%) →  30. sta (0.17%)

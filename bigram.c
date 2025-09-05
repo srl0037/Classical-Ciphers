@@ -44,7 +44,7 @@ void digram_count_funct(const char *filename, int bigram_count[ALPHABET_SIZE][AL
 
 
 //function to pair of print letters out in descending
-void digram_desc_print (const char *outfilename, const int bigram_counts[ALPHABET_SIZE][ALPHABET_SIZE]){
+void digram_desc_print (const char *infilename, const char *outfilename, const int bigram_counts[ALPHABET_SIZE][ALPHABET_SIZE]){
     FILE *outfile;
 
     //open read file, throw error if file cannot open
@@ -113,5 +113,63 @@ void digram_desc_print (const char *outfilename, const int bigram_counts[ALPHABE
             english_freq[i].first_letter, english_freq[i].second_letter, 
             english_freq[i].percent);
     }
+    fclose(outfile);
+
+    digram_decrypt(infilename, outfilename, letters, english_freq);
+
+}
+
+void digram_decrypt(const char *infilename, const char *outfilename, struct double_letter_count letters[], struct double_freq english_freq[]) {
+    FILE *infile = fopen(infilename, "r");
+    FILE *outfile = fopen(outfilename, "a");
+
+    if (!infile || !outfile) {
+        fprintf(stderr, "Failed opening input/output files.\n");
+        if (infile) fclose(infile);
+        if (outfile) fclose(outfile);
+        exit(1);
+    }
+
+    // Create bigram mapping
+    char bigram_map[ALPHABET_SIZE][ALPHABET_SIZE][2] = {{0}};
+
+    for (int i = 0; i < 30; i++) {
+        int ci1 = letters[i].first_letter - 'a';
+        int ci2 = letters[i].second_letter - 'a';
+        bigram_map[ci1][ci2][0] = english_freq[i].first_letter;
+        bigram_map[ci1][ci2][1] = english_freq[i].second_letter;
+    }
+
+    fprintf(outfile, "\n\nDecrypted Text (via BIGRAM frequency mapping):\n\n");
+
+    int c1 = EOF, c2;
+    while ((c2 = fgetc(infile)) != EOF) {
+        if (isalpha(c2)) {
+            c2 = tolower(c2);
+
+            if (c1 != EOF) {
+                int i1 = c1 - 'a';
+                int i2 = c2 - 'a';
+
+                if (bigram_map[i1][i2][0] != 0 && bigram_map[i1][i2][1] != 0) {
+                    fputc(bigram_map[i1][i2][0], outfile);
+                    fputc(bigram_map[i1][i2][1], outfile);
+                } else {
+                    fputc(c1, outfile);
+                    fputc(c2, outfile);
+                }
+
+                c1 = EOF; // reset to look for next bigram
+            } else {
+                c1 = c2;
+            }
+        } else {
+            // If non-letter, write as-is and reset
+            fputc(c2, outfile);
+            c1 = EOF;
+        }
+    }
+
+    fclose(infile);
     fclose(outfile);
 }

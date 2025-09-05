@@ -28,7 +28,7 @@ void single_count_funct(const char *filename, int *single_count) {
 }
 
 //function to print letters out in descending
-void desc_print (const char *outfilename, const int *single_count){
+void desc_print (const char *infilename, const char *outfilename, const int *single_count){
     FILE *outfile;
 
     //open read file, throw error if file cannot open
@@ -82,10 +82,42 @@ void desc_print (const char *outfilename, const int *single_count){
     fprintf(outfile, "%-10s %-10s %-10s\n", "Cipher", "Cipher %", "Most Common in Enlgish");
 
     for (int i = 0; i < ALPHABET_SIZE; i++) {
-        if (letters[i].count > 0)
+        if (letters[i].count > 0){
             fprintf(outfile, "%d. %c: %d (%.2f%%) →  %d. %c (%.2f%%)\n", (i+1), letters[i].letter, letters[i].count, 
                 letters[i].percent, (i+1), english_freq[i].letter, 
                 english_freq[i].percent);
     }
+    // fclose(outfile);
+}
+
+// Build substitution mapping
+    char mapping[ALPHABET_SIZE];
+    for (int i = 0; i < ALPHABET_SIZE; i++) {
+        mapping[letters[i].letter - 'a'] = english_freq[i].letter;
+    }
+
+    // Decrypt the input file and append to output file
+    FILE *infile = fopen(infilename, "r");
+    if (!infile) {
+        fprintf(stderr, "Failed opening input file %s\n", infilename);
+        fclose(outfile);
+        exit(1);
+    }
+
+    fprintf(outfile, "\n\nDecrypted Text (via frequency mapping):\n\n");
+
+    int ch;
+    while ((ch = fgetc(infile)) != EOF) {
+        if (isalpha(ch)) {
+            int is_upper = isupper(ch);
+            char mapped = mapping[tolower(ch) - 'a'];
+            fputc(is_upper ? toupper(mapped) : mapped, outfile);
+        } else {
+            fputc(ch, outfile);
+        }
+    }
+
+    fclose(infile);
     fclose(outfile);
 }
+

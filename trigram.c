@@ -12,6 +12,8 @@ void trigram_count_funct(const char *filename, int trigram_count[ALPHABET_SIZE][
     int first_index;
     int second_index;
     int third_index;
+    char buffer[3] = {0}; // sliding window of last 3 valid letters
+    int ch;
 
     //open file, throw error if file cannot open
     if (!(fp = fopen(filename, "r"))) {
@@ -45,6 +47,7 @@ void trigram_count_funct(const char *filename, int trigram_count[ALPHABET_SIZE][
     }
     // close the file
     fclose(fp);
+
 }
 
 void trigram_desc_print (const char *outfilename, const int trigram_counts[ALPHABET_SIZE][ALPHABET_SIZE][ALPHABET_SIZE]){
@@ -125,4 +128,3 @@ void trigram_desc_print (const char *outfilename, const int trigram_counts[ALPHA
 
     fclose(outfile);
 }
-

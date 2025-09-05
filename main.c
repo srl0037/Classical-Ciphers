@@ -20,10 +20,10 @@ int main() {
     scanf("%s", outfilename);
 
     single_count_funct(filename, single_count);
-    desc_print(outfilename, single_count);
+    desc_print(filename, outfilename, single_count);
 
     digram_count_funct(filename, bigram_counts);
-    digram_desc_print(outfilename, bigram_counts);
+    digram_desc_print(filename, outfilename, bigram_counts);
 
     trigram_count_funct(filename, trigram_counts);
     trigram_desc_print(outfilename, trigram_counts);
